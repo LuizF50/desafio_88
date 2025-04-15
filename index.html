@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batalha das Pontuações Épicas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-overlay"></div>
+    <div class="container">
+        <header>
+            <h1>Batalha das Pontuações Épicas</h1>
+            <p class="subtitle">Organize o ranking dos jogadores lendários</p>
+        </header>
+
+        <div class="input-section">
+            <h2>Adicionar Jogadores</h2>
+            <table class="players-table">
+                <thead>
+                    <tr>
+                        <th>Jogador</th>
+                        <th>Pontuação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Linhas serão geradas dinamicamente -->
+                    <tr><td><input type="text" class="player-name" placeholder="Nome do jogador"></td>
+                        <td><input type="number" class="player-score" placeholder="Pontuação"></td></tr>
+                    <tr><td><input type="text" class="player-name" placeholder="Nome do jogador"></td>
+                        <td><input type="number" class="player-score" placeholder="Pontuação"></td></tr>
+                    <tr><td><input type="text" class="player-name" placeholder="Nome do jogador"></td>
+                        <td><input type="number" class="player-score" placeholder="Pontuação"></td></tr>
+                    <tr><td><input type="text" class="player-name" placeholder="Nome do jogador"></td>
+                        <td><input type="number" class="player-score" placeholder="Pontuação"></td></tr>
+                    <tr><td><input type="text" class="player-name" placeholder="Nome do jogador"></td>
+                        <td><input type="number" class="player-score" placeholder="Pontuação"></td></tr>
+                    <tr><td><input type="text" class="player-name" placeholder="Nome do jogador"></td>
+                        <td><input type="number" class="player-score" placeholder="Pontuação"></td></tr>
+                    <tr><td><input type="text" class="player-name" placeholder="Nome do jogador"></td>
+                        <td><input type="number" class="player-score" placeholder="Pontuação"></td></tr>
+                    <tr><td><input type="text" class="player-name" placeholder="Nome do jogador"></td>
+                        <td><input type="number" class="player-score" placeholder="Pontuação"></td></tr>
+                </tbody>
+            </table>
+            
+            <button class="custom-btn btn-11" id="sort-btn">
+                Gerar Ranking
+                <div class="dot"></div>
+            </button>
+        </div>
+
+        <div class="result-section">
+            <h2>Pódio dos Jogadores</h2>
+            <div class="podium-container">
+                <div class="podium-place second-place">
+                    <div class="podium-stand"></div>
+                    <div class="player-info"></div>
+                </div>
+                <div class="podium-place first-place">
+                    <div class="podium-stand"></div>
+                    <div class="player-info"></div>
+                </div>
+                <div class="podium-place third-place">
+                    <div class="podium-stand"></div>
+                    <div class="player-info"></div>
+                </div>
+            </div>
+            <div id="other-players" class="other-players-container"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
